@@ -105,7 +105,7 @@ setup(
     #
     # This field corresponds to the "Home-Page" metadata field:
     # https://packaging.python.org/specifications/core-metadata/#home-page-optional
-    url='https://github.com/joheras/CitologyAnomalyDetector',  # Optional
+    url='https://github.com/joheras/CytologyAnomalyDetectorPython',  # Optional
 
     # This should be your name or the name of the organization which owns the
     # project.
@@ -150,14 +150,17 @@ setup(
         # that you indicate whether you support Python 2, Python 3 or both.
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8'
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10'
+        
     ],
 
     # This field adds keywords for your project which will appear on the
     # project page. What does your project relate to?
     #
     # Note that this is a string of words separated by whitespace, not a list.
-    keywords='anomaly detection fastai',  # Optional
+    keywords='anomaly detection anomalib',  # Optional
 
     # You can just specify package directories manually here if your project is
     # simple. Or you can use find_packages().
@@ -212,7 +215,7 @@ setup(
     # executes the function `main` from this package when invoked:
     entry_points={  # Optional
         'console_scripts': [
-            'anomaly-detection=AnomalyDetector.command_line:main',
+            'cytology-anomaly-detection=AnomalyDetector.command_line:main',
         ],
     }
 )
